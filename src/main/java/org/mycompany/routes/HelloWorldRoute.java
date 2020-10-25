@@ -31,15 +31,15 @@ public class HelloWorldRoute extends RouteBuilder {
 		String sslTruststorePassword = "sslTruststorePassword={{truststore.password}}";
 		
 //		Without SSL
-//		String toKafka = new StringBuilder().append("kafka:").append(topic).append("?").append(kafkaServer).toString();
-//		String fromKafka = new StringBuilder().append("kafka:").append(topic).append("?").append(kafkaServer).toString();
+		String toKafka = new StringBuilder().append("kafka:").append(topic).append("?").append(kafkaServer).toString();
+		String fromKafka = new StringBuilder().append("kafka:").append(topic).append("?").append(kafkaServer).toString();
 		
-		String toKafka = new StringBuilder().append("kafka:").append(topic).append("?").append(kafkaServer).append("&")
-				.append("securityProtocol=SSL").append("&").append(sslTruststoreLocation).append("&")
-				.append(sslTruststorePassword).toString();
-		String fromKafka = new StringBuilder().append("kafka:").append(topic).append("?").append(kafkaServer).append("&")
-				.append("securityProtocol=SSL").append("&").append(sslTruststoreLocation).append("&")
-				.append(sslTruststorePassword).toString();
+//		String toKafka = new StringBuilder().append("kafka:").append(topic).append("?").append(kafkaServer).append("&")
+//				.append("securityProtocol=SSL").append("&").append(sslTruststoreLocation).append("&")
+//				.append(sslTruststorePassword).toString();
+//		String fromKafka = new StringBuilder().append("kafka:").append(topic).append("?").append(kafkaServer).append("&")
+//				.append("securityProtocol=SSL").append("&").append(sslTruststoreLocation).append("&")
+//				.append(sslTruststorePassword).toString();
 		
 		
 
